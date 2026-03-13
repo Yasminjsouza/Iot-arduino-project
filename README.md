@@ -250,7 +250,7 @@ Permite gerar o layout da placa e exportar arquivos para fabricação.
 
 # Configuração de Rede no Arduino
 
-####Para conexão com rede utilizando Ethernet é necessário configurar:
+#### Para conexão com rede utilizando Ethernet é necessário configurar:
 
 * endereço IP
 
