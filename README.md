@@ -77,15 +77,15 @@ A comunicação serial permite que o Arduino envie e receba dados através da po
 
 Os pinos utilizados são:
 
-0 (RX) → recepção de dados
+* **0 (RX) → recepção de dados**
 
-1 (TX) → transmissão de dados
+* **1 (TX) → transmissão de dados**
 
-Esses pinos ficam bloqueados durante a comunicação serial.
+Esses pinos ficam **bloqueados durante a comunicação serial.**
 
 Grande parte dos erros em projetos Arduino ocorre por problemas de comunicação serial.
 
-Exemplo de código:
+#### Exemplo de código:
 ```cpp
 Serial.print("hello world");
 
@@ -94,11 +94,11 @@ Esse comando envia texto para o Serial Monitor.
 
 A linguagem também é case sensitive, ou seja, diferencia letras maiúsculas e minúsculas.
 
-Exemplo correto:
+#### Exemplo correto:
 ```cpp
 Serial.print("Hello");
 ```
-Exemplo incorreto:
+#### Exemplo incorreto:
 ```cp
 serial.print("Hello");
 
@@ -106,23 +106,23 @@ serial.print("Hello");
 ---
 # Fluxo de Desenvolvimento no Arduino
 
-O fluxo básico de desenvolvimento segue as etapas:
+#### O fluxo básico de desenvolvimento segue as etapas:
 
-##### 1.Escrever o código no Arduino IDE
+**1.** Escrever o código no Arduino IDE
 
-##### 2.Salvar o sketch (sem espaços no nome)
+ **2.** Salvar o sketch (sem espaços no nome)
 
-##### 3.Clicar em Verify para compilar
+ **3.** Clicar em **Verify** para compilar
 
-##### 4.Conectar o Arduino ao computador
+ **4.** Conectar o Arduino ao computador
 
-##### 5.Fazer Upload do código
+ **5.** Fazer **Upload do código**
 
-##### 6.Abrir o Serial Monitor
+**6.** Abrir o **Serial Monitor**
 
-##### 7.Verificar a saída do programa
+**7.** Verificar a saída do programa
 
-Erros comuns:
+#### Erros comuns:
 
 * falta de ponto e vírgula
 
@@ -135,15 +135,15 @@ Erros comuns:
 
 O TinkerCAD pode ser usado para simular circuitos e testar programas de Arduino.
 
-### Passos para utilizar código no simulador:
+#### Passos para utilizar código no simulador:
 
 * Copiar o código
 
 * Abrir o projeto no TinkerCAD
 
-* Acessar a seção Código
+* Acessar a seção **Código**
 
-* Selecionar modo Texto
+* Selecionar modo **Texto**
 
 * Apagar o código existente
 
@@ -151,16 +151,16 @@ O TinkerCAD pode ser usado para simular circuitos e testar programas de Arduino.
 
 * Iniciar a simulação
 
-Após iniciar a simulação, é possível abrir o monitor serial para visualizar a saída do programa.
+Após iniciar a simulação, é possível abrir o **monitor serial** para visualizar a saída do programa.
 
 Alguns comportamentos podem diferir do hardware real.
 
 ---
 # Ethernet Shield
 
-O Ethernet Shield permite conectar o Arduino à rede.
+O **Ethernet Shield** permite conectar o Arduino à rede.
 
-### Ele utiliza os seguintes pinos do Arduino Uno:
+#### Ele utiliza os seguintes pinos do Arduino Uno:
 
 * 4
 
@@ -174,7 +174,7 @@ O Ethernet Shield permite conectar o Arduino à rede.
 
 Esses pinos ficam reservados para comunicação do módulo e não devem ser usados em outras funções.
 
-Também é recomendado evitar os pinos 0 e 1 devido à comunicação serial.
+##### Também é recomendado evitar os pinos **0 e 1** devido à comunicação serial.
 
 Como o Arduino Uno possui recursos limitados, o uso da shield reduz a quantidade de pinos disponíveis.
 
@@ -191,8 +191,6 @@ Durante a montagem do circuito é necessário tomar alguns cuidados:
 * evitar contato da placa com superfícies metálicas
 
 * encaixar os pinos corretamente
-
-Existem 7 kits reserva, portanto danos às placas devem ser evitados.
 
 print 
 ---
