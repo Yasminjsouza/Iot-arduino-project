@@ -143,34 +143,34 @@ O TinkerCAD pode ser usado para simular circuitos e testar programas de Arduino.
 
 * Acessar a seção Código
 
-Selecionar modo Texto
+* Selecionar modo Texto
 
-Apagar o código existente
+* Apagar o código existente
 
-Colar o código copiado
+* Colar o código copiado
 
-Iniciar a simulação
+* Iniciar a simulação
 
 Após iniciar a simulação, é possível abrir o monitor serial para visualizar a saída do programa.
 
 Alguns comportamentos podem diferir do hardware real.
 
 ---
-Ethernet Shield
+# Ethernet Shield
 
 O Ethernet Shield permite conectar o Arduino à rede.
 
-Ele utiliza os seguintes pinos do Arduino Uno:
+### Ele utiliza os seguintes pinos do Arduino Uno:
 
-4
+* 4
 
-10
+* 10
 
-11
+* 11
 
-12
+* 12
 
-13
+* 13
 
 Esses pinos ficam reservados para comunicação do módulo e não devem ser usados em outras funções.
 
@@ -182,83 +182,83 @@ Como o Arduino Uno possui recursos limitados, o uso da shield reduz a quantidade
 
 ---
 
-Cuidados com Hardware
+# Cuidados com Hardware
 
 Durante a montagem do circuito é necessário tomar alguns cuidados:
 
-desconectar o cabo USB antes de encaixar módulos
+* desconectar o cabo USB antes de encaixar módulos
 
-evitar contato da placa com superfícies metálicas
+* evitar contato da placa com superfícies metálicas
 
-encaixar os pinos corretamente
+* encaixar os pinos corretamente
 
 Existem 7 kits reserva, portanto danos às placas devem ser evitados.
 
 print 
 ---
-Prototipação e Produção de PCB
+# Prototipação e Produção de PCB
 
 Foi apresentada a ferramenta Treadsim, utilizada para prototipação de circuitos e desenvolvimento de placas PCB.
 
-A ferramenta permite:
+####A ferramenta permite:
 
-simular circuitos
+* simular circuitos
 
-documentar projetos
+* documentar projetos
 
-gerar placas para produção
+* gerar placas para produção
 
-Processo de fabricação:
+#### Processo de fabricação:
 
-aplicação de pasta de solda com stencil
+* aplicação de pasta de solda com stencil
 
-posicionamento dos componentes
+* posicionamento dos componentes
 
-aquecimento da placa
+* aquecimento da placa
 
-soldagem final
+* soldagem final
 
 Componentes inferiores podem ser soldados manualmente para proteger os componentes superiores.
 
 ---
 
-TinkerCAD e Criação de Placas
+# TinkerCAD e Criação de Placas
 
 O TinkerCAD possui dois modos principais:
 
-Modo Esquemático
+ Modo Esquemático
 
-Mostra as conexões entre componentes, como:
+#### Mostra as conexões entre componentes, como:
 
-resistores
+*resistores
 
-LEDs
+*LEDs
 
-sensores
+*sensores
 
-Modo PCB
+##Modo PCB
 
 Permite gerar o layout da placa e exportar arquivos para fabricação.
 
-A protoboard pode ser utilizada em diferentes tamanhos:
+#### A protoboard pode ser utilizada em diferentes tamanhos:
 
-half
+* half
 
-mini
+* mini
 
 ---
 
-Configuração de Rede no Arduino
+# Configuração de Rede no Arduino
 
-Para conexão com rede utilizando Ethernet é necessário configurar:
+####Para conexão com rede utilizando Ethernet é necessário configurar:
 
-endereço IP
+* endereço IP
 
-máscara de sub-rede
+* máscara de sub-rede
 
-gateway
+* gateway
 
-DNS
+* DNS
 
 Exemplo de configuração:
 ```cpp
@@ -271,7 +271,7 @@ Esses parâmetros são necessários para comunicação na rede.
 
 ---
 
-Arduino como Servidor Web
+# Arduino como Servidor Web
 
 Utilizando a biblioteca Ethernet, o Arduino pode atuar como um servidor web.
 
@@ -285,20 +285,20 @@ Durante a execução do programa, o Arduino pode exibir o IP no Serial Monitor.
 
 Isso permite acessar o servidor pelo navegador.
 ---
-Demonstração Prática
+# Demonstração Prática
 
 Foi realizada uma demonstração conectando o Arduino ao roteador da rede.
 
-Após o envio do código:
+#### Após o envio do código:
 
-quatro LEDs indicaram comunicação TX/RX
+* quatro LEDs indicaram comunicação TX/RX
 
-o IP foi exibido no Serial Monitor
+* o IP foi exibido no Serial Monitor
 
 Isso confirmou que o dispositivo estava conectado à rede.
 
 ---
-Organização da Atividade
+# Organização da Atividade
 
 A atividade prática foi organizada em 8 estações de trabalho.
 
@@ -317,32 +317,27 @@ testar conectividade
 Um grupo deveria apresentar o funcionamento detalhado do projeto.
 
 ---
-Conclusão
+# Conclusão
 
 A aula apresentou conceitos essenciais para desenvolvimento com Arduino e IoT, incluindo:
 
-programação básica
+* programação básica
 
-comunicação serial
+* comunicação serial
 
-uso de bibliotecas
+* uso de bibliotecas
 
-prototipação eletrônica
+* prototipação eletrônica
 
-criação de placas PCB
+* criação de placas PCB
 
-configuração de rede
+* configuração de rede
 
-implementação de servidor web
+* implementação de servidor web
 
 Esses conhecimentos são fundamentais para projetos de sistemas embarcados e Internet das Coisas.
 
 
-Se quiser, posso também te ajudar a deixar isso **ainda mais profissional para GitHub**, tipo:
 
-- adicionar **índice automático**
-- colocar **badges**
-- separar em **pastas de documentação**
-- ou montar um **README nível projeto profissional** (fica bem bonito mesmo).
 
 
