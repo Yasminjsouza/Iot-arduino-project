@@ -42,7 +42,7 @@ Bibliotecas são conjuntos de códigos prontos que podem ser reutilizados para e
 
 Elas funcionam como um **repositório de soluções**, permitindo evitar a implementação manual de cálculos complexos.
 
-Exemplo de uso comum:
+#### Exemplo de uso comum:
 
 - leitura de sensores
 - cálculo de distância em sensor ultrassônico
@@ -196,9 +196,9 @@ print
 ---
 # Prototipação e Produção de PCB
 
-Foi apresentada a ferramenta Treadsim, utilizada para prototipação de circuitos e desenvolvimento de placas PCB.
+Foi apresentada a ferramenta **Treadsim**, utilizada para prototipação de circuitos e desenvolvimento de placas PCB.
 
-####A ferramenta permite:
+#### A ferramenta permite:
 
 * simular circuitos
 
@@ -208,13 +208,13 @@ Foi apresentada a ferramenta Treadsim, utilizada para prototipação de circuito
 
 #### Processo de fabricação:
 
-* aplicação de pasta de solda com stencil
+**1.** aplicação de pasta de solda com stencil
 
-* posicionamento dos componentes
+**2.** posicionamento dos componentes
 
-* aquecimento da placa
+**3.** aquecimento da placa
 
-* soldagem final
+**4.** soldagem final
 
 Componentes inferiores podem ser soldados manualmente para proteger os componentes superiores.
 
@@ -224,17 +224,17 @@ Componentes inferiores podem ser soldados manualmente para proteger os component
 
 O TinkerCAD possui dois modos principais:
 
- Modo Esquemático
+ ### Modo Esquemático
 
 #### Mostra as conexões entre componentes, como:
 
-*resistores
+* resistores
 
-*LEDs
+* LEDs
 
-*sensores
+* sensores
 
-##Modo PCB
+### Modo PCB
 
 Permite gerar o layout da placa e exportar arquivos para fabricação.
 
@@ -258,7 +258,7 @@ Permite gerar o layout da placa e exportar arquivos para fabricação.
 
 * DNS
 
-Exemplo de configuração:
+#####Exemplo de configuração:
 ```cpp
 IP: 10.6.44.48
 Máscara: 255.255.255.0
@@ -273,15 +273,16 @@ Esses parâmetros são necessários para comunicação na rede.
 
 Utilizando a biblioteca Ethernet, o Arduino pode atuar como um servidor web.
 
-Exemplo de criação de servidor:
+#####Exemplo de criação de servidor:
 ```cpp
 EthernetServer server(80);
 ```
-A porta 80 é a porta padrão do protocolo HTTP.
+A **porta 80** é a porta padrão do protocolo HTTP.
 
-Durante a execução do programa, o Arduino pode exibir o IP no Serial Monitor.
+Durante a execução do programa, o Arduino pode exibir o IP no **Serial Monitor**.
 
 Isso permite acessar o servidor pelo navegador.
+
 ---
 # Demonstração Prática
 
@@ -295,12 +296,14 @@ Foi realizada uma demonstração conectando o Arduino ao roteador da rede.
 
 Isso confirmou que o dispositivo estava conectado à rede.
 
+print
+
 ---
 # Organização da Atividade
 
 A atividade prática foi organizada em 8 estações de trabalho.
 
-Cada estação foi composta por grupos de 3 alunos.
+Cada estação foi composta por grupos de 3 pu 4 alunos.
 
 Atividades do grupo:
 
@@ -331,9 +334,9 @@ A aula apresentou conceitos essenciais para desenvolvimento com Arduino e IoT, i
 
 * configuração de rede
 
-* implementação de servidor web
+* implementação de servidor web.
 
-Esses conhecimentos são fundamentais para projetos de sistemas embarcados e Internet das Coisas.
+
 
 
 
