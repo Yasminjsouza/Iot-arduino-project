@@ -192,7 +192,8 @@ Durante a montagem do circuito é necessário tomar alguns cuidados:
 
 * encaixar os pinos corretamente
 
-print 
+![](imagemarduino.png)
+
 ---
 # Prototipação e Produção de PCB
 
