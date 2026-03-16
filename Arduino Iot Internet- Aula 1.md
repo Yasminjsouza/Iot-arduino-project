@@ -191,6 +191,7 @@ Durante a montagem do circuito é necessário tomar alguns cuidados:
 * evitar contato da placa com superfícies metálicas
 
 * encaixar os pinos corretamente
+<img width="1200" height="1600" alt="Image" src="https://github.com/user-attachments/assets/4dbde89c-b05a-41fa-9f45-6a3fcac3d78d" />
 
 ![](imagemarduino.png)
 
@@ -297,8 +298,6 @@ Foi realizada uma demonstração conectando o Arduino ao roteador da rede.
 
 Isso confirmou que o dispositivo estava conectado à rede.
 
-print
-
 ---
 # Organização da Atividade
 
@@ -316,7 +315,9 @@ verificar o IP no monitor serial
 
 testar conectividade
 
-Um grupo deveria apresentar o funcionamento detalhado do projeto.
+ado do projeto.
+
+<img width="1200" height="1600" alt="imagemkit" src="https://github.com/user-attachments/assets/be171e94-1777-4d59-b762-9729038392c3" />
 
 ---
 # Conclusão
