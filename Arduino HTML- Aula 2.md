@@ -101,17 +101,17 @@ Foi utilizada uma analogia para facilitar o entendimento:
 
 ---
 
-# Estrutura do Projeto
+## Estrutura do Projeto
 
-Foi criado um projeto com organização básica de arquivos.
+Foi criado um projeto com organização básica de arquivos:
 
+```text
 iot-web-server/
-│
 ├── index.html
 ├── arduino_web_server.ino
 └── README.md
 
-
+```
 ---
 
 # Criação do index.html
@@ -141,152 +141,168 @@ Estrutura inicial:
 </html>
 ```
 ---
-CSS e Responsividade
+# CSS e Responsividade
 
-O CSS é responsável pela estilização da página.
+O **CSS** é responsável pela estilização da página.
 
-Comparação apresentada em aula:
+####Comparação apresentada em aula:
 
-HTML → esqueleto
+* HTML → esqueleto
 
-CSS → aparência (cores, layout, estilo)
+* CSS → aparência (cores, layout, estilo)
 
 Devido às limitações de memória do Arduino, não é possível utilizar arquivos CSS externos.
 
-A solução é utilizar CSS embutido no próprio HTML.
+A solução é utilizar **CSS embutido no próprio HTML.**
 
 ---
-Limitações do Arduino
+# Limitações do Arduino
 
 O Arduino possui limitações de hardware que impactam projetos web.
 
-Principais limitações:
+####Principais limitações:
 
-Memória de aproximadamente 32 KB
+* Memória de aproximadamente 32 KB
 
-Não suporta arquivos grandes
+* Não suporta arquivos **grandes**
 
-Imagens geralmente não cabem na memória
+* Imagens geralmente não cabem na memória
 
-Projetos maiores precisam de microSD
+* Projetos maiores precisam de **microSD**
+---
+#  Demonstração do Código
+
+### Arduino IDE
+
+![1000060946](https://github.com/user-attachments/assets/7366dd97-9673-467b-9635-10acb3d27961)
+![1000060949](https://github.com/user-attachments/assets/d2dddad9-dfeb-4f07-a9f2-4924b03dadd5)
+![1000060943](https://github.com/user-attachments/assets/c3a0051a-9f8d-40b5-907b-354256aa372d)
+
 
 ---
-Configuração do Arduino Web Server
+# Configuração do Arduino Web Server
 
 O Arduino pode funcionar como um servidor web utilizando a biblioteca Ethernet.
 
-Etapas do código:
+#### Etapas do código:
 
-Importar bibliotecas
+**1.** Importar bibliotecas
 
-Definir MAC Address
+**2.** Definir MAC Address
 
-Inicializar o servidor
+**3.** Inicializar o servidor
 
-Aguardar conexões
+**4.** Aguardar conexões
 
-Receber requisições
+**5.** Receber requisições
 
-Enviar documento HTML
+**6.** Enviar documento HTML
 
-Encerrar conexão
+**7.** Encerrar conexão
 
 ---
-Cabeçalho HTTP
+# Cabeçalho HTTP
 
 Para que o navegador interprete corretamente o documento enviado pelo Arduino, é necessário enviar um cabeçalho HTTP válido.
 
-Exemplo:
+#### Exemplo:
+```
 HTTP/1.1 200 OK
 Content-Type: text/html
 Connection: close
+```
 Após o cabeçalho deve existir uma linha em branco antes do conteúdo HTML.
+
 ---
-Estrutura do Código Arduino
+# Estrutura do Código Arduino
 
-O programa segue a estrutura padrão do Arduino:
+#### O programa segue a estrutura padrão do Arduino:
 
-setup() → inicializa o servidor
+* setup() → inicializa o servidor
 
-loop() → verifica conexões de clientes
+* loop() → verifica conexões de clientes
 
-No loop:
+#### No loop:
 
-Detecta tentativa de conexão
+**1.** Detecta tentativa de conexão
 
-Lê a requisição do cliente
+**2.** Lê a requisição do cliente
 
-Envia a página HTML
+**3.** Envia a página HTML
 
-Encerra a conexão com:
+#### Encerra a conexão com:
+
 ```cpp
 client.stop();
 ```
 ---
-Leitura de Requisições
+# Leitura de Requisições
 
-Comando utilizado para verificar se há dados disponíveis:
+#### Comando utilizado para verificar se há dados disponíveis:
 ```
 client.available()
 ```
 Esse comando verifica se o cliente enviou alguma requisição.
 
-Também foi apresentado o uso do operador ponto:
+#### Também foi apresentado o uso do operador ponto:
 ```
 client.available()
 ```
 O operador . permite acessar métodos e propriedades de um objeto.
 
 ---
-Boas Práticas de Código
+# Práticas do Código:
 
-Algumas boas práticas foram destacadas durante a aula:
+#### Algumas boas práticas foram destacadas durante a aula:
 
-remover comentários desnecessários
+* remover comentários desnecessários
 
-organizar o código
+* organizar o código
 
-manter indentação correta
+* manter indentação correta
 
-utilizar Ctrl + T para alinhar o código
+* utilizar Ctrl + T para alinhar o código
 
-inserir delay(1) para estabilidade
+* inserir delay(1) para estabilidade
 
-salvar o código frequentemente
+* salvar o código frequentemente
 
 ---
-Teste de Conectividade
+# Teste de Conectividade
 
-Após enviar o código para o Arduino:
+###Após enviar o código para o Arduino:
 
-Abrir o Serial Monitor
+**1.**Abrir o **Serial Monitor**
 
-Verificar o IP atribuído
+**2.**Verificar o **IP atribuído**
 
-Abrir o navegador do celular
+**3.**Abrir o navegador do celular
 
-Digitar o IP do Arduino
+**4.**Digitar o **IP do Arduino**
 
-Exemplo de IP:
+#### Exemplo de IP:
 ```
 10.26.44.56
 ```
 Se tudo estiver configurado corretamente, a página HTML será exibida no navegador.
----
-Conclusão
 
-A aula demonstrou como integrar desenvolvimento web com sistemas embarcados, permitindo que dispositivos como Arduino funcionem como servidores web.
+---
+# Conclusão
+
+A aula demonstrou como integrar **desenvolvimento web com sistemas embarcados**, permitindo que dispositivos como Arduino funcionem como servidores web.
 
 Foram abordados conceitos fundamentais de:
 
-HTML
+* HTML
 
-HTTP
+* HTTP
 
-arquitetura cliente-servidor
+* arquitetura cliente-servidor
 
-desenvolvimento IoT
+* desenvolvimento IoT
 
-comunicação em rede
+* comunicação em rede
 
 Esse tipo de aplicação permite criar interfaces web simples para controle remoto de dispositivos eletrônicos.
+
+---
