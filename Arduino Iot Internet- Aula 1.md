@@ -195,6 +195,10 @@ Durante a montagem do circuito é necessário tomar alguns cuidados:
 
 ![](imagemarduino.png)
 
+
+https://github.com/user-attachments/assets/709e4b2d-5a88-4235-a431-f61275ca5734
+
+
 ---
 # Prototipação e Produção de PCB
 
