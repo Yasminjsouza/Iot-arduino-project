@@ -41,11 +41,13 @@ Fluxo:
 
 ### Código no Arduino IDE
 
-![Código Arduino](imagens/codigo1.jpg)
+![1000061545](https://github.com/user-attachments/assets/6f3213df-fe00-488c-9a7e-cc99c034ca54)
 
-![Código Arduino](imagens/codigo2.jpg)
+![1000061546](https://github.com/user-attachments/assets/a78c6cc1-f4a7-43c4-a212-f8522ad7ec2e)
 
-![Código Arduino](imagens/codigo3.jpg)
+
+![1000061547](https://github.com/user-attachments/assets/6985e64d-a783-4c71-be35-bbb5b0ee3a56)
+
 
 ---
 
@@ -242,7 +244,11 @@ Base fundamental para desenvolvimento de sistemas IoT.
 
 ## Demonstração
 
-(Adicionar vídeo futuramente aqui)
+
+
+https://github.com/user-attachments/assets/88aba2fa-4cc6-40b8-9eb1-196c1dd0fc4d
+
+
 
 ---
 
